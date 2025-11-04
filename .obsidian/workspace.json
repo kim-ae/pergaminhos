@@ -1,0 +1,193 @@
+{
+  "main": {
+    "id": "8d970fa33353df3e",
+    "type": "split",
+    "children": [
+      {
+        "id": "98373313f186778d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b26c1e8de3fe6c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ELK/Filebeat/Metrics.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Metrics"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5331477f38ee9697",
+    "type": "split",
+    "children": [
+      {
+        "id": "767d14307ce9b78b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2221937f892e28fb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c4f290c97b3f4c0d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "eb41b335f06bfd32",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5795367d6e176bea",
+    "type": "split",
+    "children": [
+      {
+        "id": "27d19f0d9bd42d39",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9b7c24732c82e3bb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ELK/Filebeat/Metrics.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Metrics"
+            }
+          },
+          {
+            "id": "42954610cf87650c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ELK/Filebeat/Metrics.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Metrics"
+            }
+          },
+          {
+            "id": "f76b378e870a9f34",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "738af807bd323539",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ELK/Filebeat/Metrics.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Metrics"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "3b26c1e8de3fe6c6",
+  "lastOpenFiles": [
+    "ELK/Filebeat/Filebeat Architecture overview.canvas",
+    "ELK/Filebeat/1 - Harvester.md",
+    "ELK/some links.md",
+    "ELK/Filebeat/Metrics.md",
+    "CV MindMap.canvas",
+    "README.md",
+    "ELK/Filebeat/2- Processor Chain.md",
+    "ELK/Filebeat/5 - Output.md",
+    "ELK/Filebeat/4 - Queue.md",
+    "ELK/Filebeat/3 - Accumulator.md",
+    "ELK/Filebeat",
+    "ELK",
+    "Documentation/Documentations Struccture.canvas",
+    "Documentation/Get Help.md",
+    "Documentation/Get started.md",
+    "Documentation/Get Knowledgeable.md",
+    "Documentation",
+    "Welcome.md"
+  ]
+}
