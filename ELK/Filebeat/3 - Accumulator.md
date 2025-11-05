@@ -1,1 +1,0 @@
-The accumulator gathers them into batches.

@@ -1,3 +1,4 @@
+tags: #reference #filebeat #beats #libbeats 
 Based on project: 
 ## Beats
 Information that is common to all Beats, e.g. version, goroutines, file handles, CPU, memory

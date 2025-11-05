@@ -1,0 +1,1 @@
+* [Metrics types](https://github.com/elastic/beats/blob/78f115e4f37aec07ae38bc50e8984dce992a7596/libbeat/monitoring/report/log/log.go#L39)

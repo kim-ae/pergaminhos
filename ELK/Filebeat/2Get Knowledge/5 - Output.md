@@ -1,3 +1,4 @@
+tags: #undesrtanding-concepts #filebeat #beats #libbeats 
 This component takes batches from the queue and manages the connection to the actual output(s).
 - **Purpose:** Handle the connection logic, retries, and load balancing.
 - **Key Behaviors:**

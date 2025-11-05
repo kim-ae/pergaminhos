@@ -1,3 +1,4 @@
+tags: #undesrtanding-concepts #filebeat #beats #libbeats 
 This is the **heart of the pipeline's resilience**. The batch of events is placed into a queue.
 - **Purpose:** Absorb backpressure and survive output failures.
 - **Types of Queues:**

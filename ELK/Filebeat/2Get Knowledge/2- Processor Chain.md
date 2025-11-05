@@ -1,3 +1,4 @@
+tags: #undesrtanding-concepts #filebeat #beats #libbeats 
 As soon as a log line is read by a harvester, it becomes a "beat.Event" and enters the processor chain. This is where you can manipulate and enrich the data _in-memory, before it is queued_.
 - **Purpose:** Decorate, filter, and reduce the volume of your data.
 - **Common Processors:**

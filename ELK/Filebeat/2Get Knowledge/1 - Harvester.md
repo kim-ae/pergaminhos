@@ -1,3 +1,4 @@
+tags: #undesrtanding-concepts #filebeat #beats #libbeats 
 **NDJSON parsers (and other input parsers like `multiline`) are applied in the harvester, NOT in the processor chain.**
 ### What happens in the Harvester:
 1. **Raw Byte Reading**: The harvester reads raw bytes from the file

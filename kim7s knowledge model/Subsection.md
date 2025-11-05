@@ -1,0 +1,1 @@
+This is almost like section, but it does not have 0Tip nor 1Tag, it will have all others characteristics.
