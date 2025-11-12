@@ -11,17 +11,14 @@
             "id": "78953dec71f72708",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "ELK/ECK/2Get Knowledge/ES Architecture.canvas",
-                "viewState": {
-                  "x": -225,
-                  "y": 160,
-                  "zoom": -0.6552027975664129
-                }
+                "file": "ELK/Filebeat/3Get Help/Performance Issues.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "ES Architecture"
+              "icon": "lucide-file",
+              "title": "Performance Issues"
             }
           }
         ]
@@ -185,6 +182,11 @@
   },
   "active": "78953dec71f72708",
   "lastOpenFiles": [
+    "ELK/Filebeat/3Get Help/Performance Issues.md",
+    "ELK/Filebeat/3Get Help/Metrics.md",
+    "ELK/Filebeat/zSource.md",
+    "ELK/Filebeat/3Get Help/Configuration Issues.md",
+    "ELK/ECK/2Get Knowledge/ES Architecture.canvas",
     "ELK/ECK/3Get Help/Indexing issues.md",
     "kim7s knowledge model/Kim7s knowledge model.canvas",
     "kim7s knowledge model/CHANGELOG.md",
@@ -195,7 +197,6 @@
     "ELK/0Tips.md",
     "ELK/ECK/2Get Knowledge/Write data.md",
     "ELK/ECK/3Get Help/images",
-    "ELK/ECK/2Get Knowledge/ES Architecture.canvas",
     "ELK/ECK/3Get Help/Ingestion pipeline issues.md",
     "ELK/ECK/3Get Help/Troubleshoot.md",
     "ELK/ECK/3Get Help",
@@ -206,7 +207,6 @@
     "ELK/ECK",
     "ELK/Filebeat/1Get Started/K8S Setup.md",
     "ELK/Filebeat/2Get Knowledge/Filebeat configure explained.md",
-    "ELK/Filebeat/3Get Help/Configuration Issues.md",
     "ELK/Filebeat/2Get Knowledge/Filebeat Architecture overview.canvas",
     "K8S/1Tag.md",
     "Linux/0Tips.md",
@@ -214,11 +214,9 @@
     "CV MindMap.canvas",
     "Untitled.md",
     "README.md",
-    "ELK/Filebeat/3Get Help/Metrics.md",
     "ELK/Filebeat/2Get Knowledge/1 - Harvester.md",
     "ELK/Filebeat/2Get Knowledge/5 - Output.md",
     "ELK/Filebeat/2Get Knowledge/4 - Queue.md",
-    "ELK/Filebeat/2Get Knowledge/3 - Accumulator.md",
     "ELK/Filebeat/3Get Help",
     "ELK/Filebeat/2Get Knowledge",
     "ELK/Filebeat/1Get Started",
