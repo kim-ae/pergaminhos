@@ -4,21 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "98373313f186778d",
+        "id": "70cff53c5e61fda2",
         "type": "tabs",
         "children": [
           {
-            "id": "3b26c1e8de3fe6c6",
+            "id": "78953dec71f72708",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
+                "file": "ELK/ECK/2Get Knowledge/ES Architecture.canvas",
+                "viewState": {
+                  "x": -225,
+                  "y": 160,
+                  "zoom": -0.6552027975664129
+                }
               },
-              "icon": "lucide-file",
-              "title": "README"
+              "icon": "lucide-layout-dashboard",
+              "title": "ES Architecture"
             }
           }
         ]
@@ -78,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 263.5
   },
   "right": {
     "id": "5795367d6e176bea",
@@ -166,7 +169,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,39 +183,47 @@
       "bases:Create new base": false
     }
   },
-  "active": "3b26c1e8de3fe6c6",
+  "active": "78953dec71f72708",
   "lastOpenFiles": [
+    "ELK/ECK/3Get Help/Indexing issues.md",
+    "kim7s knowledge model/Kim7s knowledge model.canvas",
+    "kim7s knowledge model/CHANGELOG.md",
+    "kim7s knowledge model/0Tags.md",
+    "ELK/1Tags.md",
+    "ELK/ECK/2Get Knowledge/Ingest Nodes.md",
+    "ELK/ECK/3Get Help/images/node_indexing_rate.png",
+    "ELK/0Tips.md",
+    "ELK/ECK/2Get Knowledge/Write data.md",
+    "ELK/ECK/3Get Help/images",
+    "ELK/ECK/2Get Knowledge/ES Architecture.canvas",
+    "ELK/ECK/3Get Help/Ingestion pipeline issues.md",
+    "ELK/ECK/3Get Help/Troubleshoot.md",
+    "ELK/ECK/3Get Help",
+    "ELK/zSource.md",
+    "ELK/ECK/2Get Knowledge/Master Nodes.md",
+    "ELK/ECK/2Get Knowledge/Data Nodes.md",
+    "ELK/ECK/2Get Knowledge",
+    "ELK/ECK",
+    "ELK/Filebeat/1Get Started/K8S Setup.md",
+    "ELK/Filebeat/2Get Knowledge/Filebeat configure explained.md",
+    "ELK/Filebeat/3Get Help/Configuration Issues.md",
+    "ELK/Filebeat/2Get Knowledge/Filebeat Architecture overview.canvas",
+    "K8S/1Tag.md",
+    "Linux/0Tips.md",
+    "K8S/0Tips.md",
+    "CV MindMap.canvas",
+    "Untitled.md",
+    "README.md",
     "ELK/Filebeat/3Get Help/Metrics.md",
     "ELK/Filebeat/2Get Knowledge/1 - Harvester.md",
-    "ELK/Filebeat/2Get Knowledge/Filebeat Architecture overview.canvas",
     "ELK/Filebeat/2Get Knowledge/5 - Output.md",
     "ELK/Filebeat/2Get Knowledge/4 - Queue.md",
     "ELK/Filebeat/2Get Knowledge/3 - Accumulator.md",
-    "ELK/Filebeat/2Get Knowledge/2- Processor Chain.md",
-    "ELK/1Tags.md",
-    "kim7s knowledge model/Kim7s knowledge model.canvas",
-    "kim7s knowledge model/Section.md",
-    "kim7s knowledge model/Subsection.md",
-    "kim7s knowledge model/zSource.md",
-    "ELK/zSource.md",
     "ELK/Filebeat/3Get Help",
     "ELK/Filebeat/2Get Knowledge",
     "ELK/Filebeat/1Get Started",
-    "kim7s knowledge model/CHANGELOG.md",
-    "kim7s knowledge model/Get Help.md",
-    "CV MindMap.canvas",
-    "README.md",
-    "kim7s knowledge model/Get Knowledgeable.md",
-    "ELK/Filebeat/Source.md",
-    "kim7s knowledge model/0Tags.md",
-    "ELK/0Tips.md",
-    "K8S/0Tips.md",
     "Linux",
     "K8S",
-    "ELK/Filebeat",
-    "ELK",
-    "kim7s knowledge model/Get started.md",
-    "kim7s knowledge model",
-    "Welcome.md"
+    "ELK/Filebeat"
   ]
 }

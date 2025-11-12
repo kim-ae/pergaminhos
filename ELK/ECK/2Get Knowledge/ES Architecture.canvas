@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"162fb56ebae0de87","type":"group","x":-920,"y":-500,"width":1110,"height":460,"label":"Cloud"},
+		{"id":"cd602cb87fb13596","type":"group","x":-240,"y":100,"width":490,"height":720,"label":"Lucene Shard / Data node"},
+		{"id":"3581d05bacd65172","type":"group","x":-580,"y":-420,"width":750,"height":360,"label":"K8S Cluster"},
+		{"id":"be9edd93d0a5d2b8","type":"group","x":-60,"y":600,"width":290,"height":200,"label":"Index / Shard 1"},
+		{"id":"951279dd86ca7181","type":"text","text":"Service (LB)","x":-560,"y":-140,"width":250,"height":60},
+		{"id":"c8130af7a51b1469","type":"text","text":"Ingress LB","x":-900,"y":-140,"width":250,"height":60},
+		{"id":"566fad6b9bf092ca","type":"text","text":"Client","x":-1220,"y":-140,"width":250,"height":60},
+		{"id":"37ca9ec5f039d594","type":"text","text":"Coordinator node","x":-140,"y":-380,"width":250,"height":60},
+		{"id":"eae42b00c2158478","type":"text","text":"Ingest Node","x":-140,"y":-260,"width":250,"height":60},
+		{"id":"7371d819c968dbd8","type":"text","text":"Data node","x":-140,"y":-140,"width":250,"height":60},
+		{"id":"89b95a845f32d60f","type":"text","text":"Parse","x":-40,"y":120,"width":250,"height":60},
+		{"id":"8250ce18a26754ac","type":"text","text":"Buffer","x":-40,"y":470,"width":250,"height":60},
+		{"id":"24c59fab8d8d71a4","type":"text","text":"Commit","x":-40,"y":720,"width":250,"height":60},
+		{"id":"e8cc1bb127a5eb61","type":"text","text":"Flush","x":-40,"y":620,"width":250,"height":60},
+		{"id":"43bc1f3d2941c40f","type":"text","text":"Text?","x":-40,"y":230,"width":250,"height":60},
+		{"id":"b79a583197bf46ed","type":"text","text":"Analyze","x":-220,"y":350,"width":250,"height":60},
+		{"id":"48c6a68cf99a5ca2","type":"text","text":"Primary","x":520,"y":200,"width":250,"height":60},
+		{"id":"dc40bfb1045b4e16","type":"text","text":"Replica","x":520,"y":320,"width":250,"height":60},
+		{"id":"c92ab14a182536f8","type":"text","text":"Coordinating","x":520,"y":90,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"b6059198f0cf0a56","fromNode":"566fad6b9bf092ca","fromSide":"right","toNode":"c8130af7a51b1469","toSide":"left"},
+		{"id":"cac7e2a0b788f14f","fromNode":"c8130af7a51b1469","fromSide":"right","toNode":"951279dd86ca7181","toSide":"left"},
+		{"id":"1f7bc7cbaa5a8eb7","fromNode":"951279dd86ca7181","fromSide":"right","toNode":"37ca9ec5f039d594","toSide":"left"},
+		{"id":"f2b59df98ba47c41","fromNode":"37ca9ec5f039d594","fromSide":"bottom","toNode":"eae42b00c2158478","toSide":"top"},
+		{"id":"ae1d20d3e6e4e157","fromNode":"eae42b00c2158478","fromSide":"bottom","toNode":"7371d819c968dbd8","toSide":"top"},
+		{"id":"213dc2fef580ba4a","fromNode":"43bc1f3d2941c40f","fromSide":"bottom","toNode":"b79a583197bf46ed","toSide":"top","label":"yes"},
+		{"id":"28fd4a42b818201c","fromNode":"43bc1f3d2941c40f","fromSide":"bottom","toNode":"8250ce18a26754ac","toSide":"top","label":"no"},
+		{"id":"12c0d2339252d840","fromNode":"b79a583197bf46ed","fromSide":"bottom","toNode":"8250ce18a26754ac","toSide":"top"},
+		{"id":"5f052934f53c798d","fromNode":"8250ce18a26754ac","fromSide":"bottom","toNode":"e8cc1bb127a5eb61","toSide":"top"},
+		{"id":"499451f3d260dafe","fromNode":"e8cc1bb127a5eb61","fromSide":"bottom","toNode":"24c59fab8d8d71a4","toSide":"top"},
+		{"id":"11def087794f8ea4","fromNode":"89b95a845f32d60f","fromSide":"bottom","toNode":"43bc1f3d2941c40f","toSide":"top"},
+		{"id":"1006dce3a9c34081","fromNode":"cd602cb87fb13596","fromSide":"top","toNode":"7371d819c968dbd8","toSide":"bottom","toEnd":"none"}
+	]
+}
