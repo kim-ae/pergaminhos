@@ -11,14 +11,17 @@
             "id": "78953dec71f72708",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "ELK/Filebeat/3Get Help/Performance Issues.md",
-                "mode": "source",
-                "source": false
+                "file": "ELK/Filebeat/3Get Help/ES Performance links mindmap.canvas",
+                "viewState": {
+                  "x": -49,
+                  "y": -296.7124999999999,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "Performance Issues"
+              "icon": "lucide-layout-dashboard",
+              "title": "ES Performance links mindmap"
             }
           }
         ]
@@ -182,6 +185,8 @@
   },
   "active": "78953dec71f72708",
   "lastOpenFiles": [
+    "ELK/zSource.md",
+    "ELK/Filebeat/3Get Help/ES Performance links mindmap.canvas",
     "ELK/Filebeat/3Get Help/Performance Issues.md",
     "ELK/Filebeat/3Get Help/Metrics.md",
     "ELK/Filebeat/zSource.md",
@@ -200,7 +205,6 @@
     "ELK/ECK/3Get Help/Ingestion pipeline issues.md",
     "ELK/ECK/3Get Help/Troubleshoot.md",
     "ELK/ECK/3Get Help",
-    "ELK/zSource.md",
     "ELK/ECK/2Get Knowledge/Master Nodes.md",
     "ELK/ECK/2Get Knowledge/Data Nodes.md",
     "ELK/ECK/2Get Knowledge",
@@ -216,7 +220,6 @@
     "README.md",
     "ELK/Filebeat/2Get Knowledge/1 - Harvester.md",
     "ELK/Filebeat/2Get Knowledge/5 - Output.md",
-    "ELK/Filebeat/2Get Knowledge/4 - Queue.md",
     "ELK/Filebeat/3Get Help",
     "ELK/Filebeat/2Get Knowledge",
     "ELK/Filebeat/1Get Started",
