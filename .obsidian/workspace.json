@@ -4,24 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "70cff53c5e61fda2",
+        "id": "bcf8ca1d415d97e1",
         "type": "tabs",
         "children": [
           {
-            "id": "78953dec71f72708",
+            "id": "bcfdaf663023d5ff",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "ELK/Filebeat/3Get Help/ES Performance links mindmap.canvas",
+                "file": "Eng SW/1Get Knowledge/CICD.canvas",
                 "viewState": {
-                  "x": -49,
-                  "y": -296.7124999999999,
-                  "zoom": 0
+                  "x": -43,
+                  "y": 533.8488842931879,
+                  "zoom": -1.1499674893159908
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "ES Performance links mindmap"
+              "title": "CICD"
             }
           }
         ]
@@ -183,10 +183,29 @@
       "bases:Create new base": false
     }
   },
-  "active": "78953dec71f72708",
+  "active": "bcfdaf663023d5ff",
   "lastOpenFiles": [
-    "ELK/zSource.md",
+    "Eng SW/0Get Onboarded/Untitled.md",
+    "Eng SW/0Get Onboarded/Simple Pipeline.canvas",
+    "Eng SW/1Get Knowledge/CICD.canvas",
+    "Eng SW/2Get Help",
+    "Eng SW/1Get Knowledge",
+    "Eng SW/0Get Onboarded",
+    "Eng SW/Untitled.base",
+    "Eng SW/Untitled.md",
+    "Linux/0Tips.md",
+    "Eng SW",
+    "K8S/0Get Onboarded/DIY - k8s at home.md",
+    "README.md",
+    "K8S/0Get Onboarded",
+    "ELK/ECK/2Get Knowledge/Write data.md",
+    "K8S/3Get Help/Scheduler do not respect Rolling Update.md",
+    "K8S/0Tips.md",
+    "K8S/3Get Help/Untitled.md",
+    "K8S/1Tag.md",
     "ELK/Filebeat/3Get Help/ES Performance links mindmap.canvas",
+    "K8S/3Get Help",
+    "ELK/zSource.md",
     "ELK/Filebeat/3Get Help/Performance Issues.md",
     "ELK/Filebeat/3Get Help/Metrics.md",
     "ELK/Filebeat/zSource.md",
@@ -200,7 +219,6 @@
     "ELK/ECK/2Get Knowledge/Ingest Nodes.md",
     "ELK/ECK/3Get Help/images/node_indexing_rate.png",
     "ELK/0Tips.md",
-    "ELK/ECK/2Get Knowledge/Write data.md",
     "ELK/ECK/3Get Help/images",
     "ELK/ECK/3Get Help/Ingestion pipeline issues.md",
     "ELK/ECK/3Get Help/Troubleshoot.md",
@@ -208,23 +226,7 @@
     "ELK/ECK/2Get Knowledge/Master Nodes.md",
     "ELK/ECK/2Get Knowledge/Data Nodes.md",
     "ELK/ECK/2Get Knowledge",
-    "ELK/ECK",
-    "ELK/Filebeat/1Get Started/K8S Setup.md",
-    "ELK/Filebeat/2Get Knowledge/Filebeat configure explained.md",
     "ELK/Filebeat/2Get Knowledge/Filebeat Architecture overview.canvas",
-    "K8S/1Tag.md",
-    "Linux/0Tips.md",
-    "K8S/0Tips.md",
-    "CV MindMap.canvas",
-    "Untitled.md",
-    "README.md",
-    "ELK/Filebeat/2Get Knowledge/1 - Harvester.md",
-    "ELK/Filebeat/2Get Knowledge/5 - Output.md",
-    "ELK/Filebeat/3Get Help",
-    "ELK/Filebeat/2Get Knowledge",
-    "ELK/Filebeat/1Get Started",
-    "Linux",
-    "K8S",
-    "ELK/Filebeat"
+    "CV MindMap.canvas"
   ]
 }

@@ -9,3 +9,9 @@
 ```
 chroot /host /bin/systemctl list-units --type=service
 ```
+
+## Force delete
+#pod #kubectl #cli #delete #k8s
+```
+kubectl delete pod <pod-name> --grace-period=0 --force
+```

@@ -1,1 +1,0 @@
-#k8s #aks #daemonset 
