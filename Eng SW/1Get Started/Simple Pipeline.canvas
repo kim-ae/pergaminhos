@@ -1,21 +1,21 @@
 {
 	"nodes":[
-		{"id":"4b40fdbf92191806","type":"group","x":-873,"y":-126,"width":1690,"height":220,"label":"CI"},
+		{"id":"4b40fdbf92191806","type":"group","x":-873,"y":-126,"width":1690,"height":200,"label":"CI"},
 		{"id":"07f2c833051ed00f","type":"group","x":-72,"y":154,"width":945,"height":173,"label":"CD Prod"},
 		{"id":"9cce4019a1e14dfb","type":"group","x":37,"y":-326,"width":595,"height":100,"label":"CD Test/QA"},
-		{"id":"c47c8242cecc7dc5","type":"text","text":"Rollout new version","x":273,"y":247,"width":250,"height":60},
-		{"id":"cb46c590d4feac0c","type":"text","text":"Readiness Probe","x":603,"y":204,"width":250,"height":60},
 		{"id":"712bf6e728f361da","type":"text","text":"Apply Database changes","x":-52,"y":174,"width":250,"height":60},
-		{"id":"f954a1f3501e7520","type":"text","text":"Canary Deploy","x":273,"y":174,"width":250,"height":60},
+		{"id":"6e0d93a290809b2f","type":"text","text":"Change","x":-853,"y":-106,"width":250,"height":60},
+		{"id":"2ba2eec94d8b7a85","type":"text","text":"Test","x":-553,"y":-106,"width":250,"height":60},
+		{"id":"781489fbfe610961","type":"text","text":"Create RC Version ","x":-253,"y":-106,"width":250,"height":60},
 		{"id":"f2605d8dace8a021","type":"text","text":"Create SemVer","x":237,"y":14,"width":250,"height":60},
 		{"id":"b189377bf0e3ccbf","type":"text","text":"Track SemVer","x":547,"y":14,"width":250,"height":60},
 		{"id":"d680a859b7fdad7c","type":"text","text":"Track RC Version","x":57,"y":-106,"width":250,"height":60},
 		{"id":"fce9cec0b0b94b95","type":"text","text":"Release","x":403,"y":-106,"width":250,"height":60},
-		{"id":"6e0d93a290809b2f","type":"text","text":"Change","x":-853,"y":-106,"width":250,"height":60},
-		{"id":"2ba2eec94d8b7a85","type":"text","text":"Test","x":-553,"y":-106,"width":250,"height":60},
-		{"id":"781489fbfe610961","type":"text","text":"Create RC Version ","x":-253,"y":-106,"width":250,"height":60},
+		{"id":"f954a1f3501e7520","type":"text","text":"Canary Deploy","x":273,"y":174,"width":250,"height":60},
 		{"id":"ac1fbef80112a90c","type":"text","text":"Apply Database Changes","x":57,"y":-306,"width":250,"height":60},
-		{"id":"0d6365938665e7ec","type":"text","text":"Rollout new version","x":362,"y":-306,"width":250,"height":60}
+		{"id":"0d6365938665e7ec","type":"text","text":"Rollout new version","x":362,"y":-306,"width":250,"height":60},
+		{"id":"c47c8242cecc7dc5","type":"text","text":"Rollout new version","x":273,"y":247,"width":250,"height":60},
+		{"id":"cb46c590d4feac0c","type":"text","text":"Readiness Probe","x":603,"y":204,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"36ce9736b3ecb98b","fromNode":"c47c8242cecc7dc5","fromSide":"right","toNode":"cb46c590d4feac0c","toSide":"left"},

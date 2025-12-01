@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"fe6d136869d300f5","type":"text","text":"Apply migration","x":-380,"y":-60,"width":250,"height":60},
+		{"id":"2b1d27f513be13fe","type":"text","text":"Deploy new version","x":-80,"y":-60,"width":250,"height":60},
+		{"id":"e4f1cc38486a8e78","type":"text","text":"Test Readiness endpoint","x":220,"y":-60,"width":250,"height":60},
+		{"id":"c8e06c801f70c0bb","type":"text","text":"Is ready?","x":520,"y":-60,"width":120,"height":60},
+		{"id":"69e60362c6206417","type":"text","text":"Healthiness Endpoint","x":-380,"y":80,"width":250,"height":60},
+		{"id":"fc187d6d9fb9e0a0","type":"text","text":"Is Healthy?","x":-80,"y":80,"width":125,"height":60},
+		{"id":"6764c55d2731f106","type":"text","text":"Delete old Version","x":-80,"y":220,"width":250,"height":60},
+		{"id":"09449efa172d5e6f","type":"text","text":"Allow Traffic","x":-380,"y":220,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"ac42f7e98d5f9ce5","fromNode":"c8e06c801f70c0bb","fromSide":"bottom","toNode":"69e60362c6206417","toSide":"top","label":"yes"},
+		{"id":"3774885d6afe29ba","fromNode":"fe6d136869d300f5","fromSide":"right","toNode":"2b1d27f513be13fe","toSide":"left"},
+		{"id":"7fe8b8936cfe06f3","fromNode":"2b1d27f513be13fe","fromSide":"right","toNode":"e4f1cc38486a8e78","toSide":"left"},
+		{"id":"8023ac8ed900e223","fromNode":"e4f1cc38486a8e78","fromSide":"right","toNode":"c8e06c801f70c0bb","toSide":"left"},
+		{"id":"13e72264caf2da8f","fromNode":"69e60362c6206417","fromSide":"right","toNode":"fc187d6d9fb9e0a0","toSide":"left"},
+		{"id":"9f217989305dd3d0","fromNode":"fc187d6d9fb9e0a0","fromSide":"bottom","toNode":"09449efa172d5e6f","toSide":"top","label":"yes"},
+		{"id":"a5268af55057d765","fromNode":"09449efa172d5e6f","fromSide":"right","toNode":"6764c55d2731f106","toSide":"left"}
+	]
+}

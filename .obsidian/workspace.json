@@ -4,24 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "bcf8ca1d415d97e1",
+        "id": "99e3f710586f1b98",
         "type": "tabs",
         "children": [
           {
-            "id": "bcfdaf663023d5ff",
+            "id": "73da04b5a7d35f76",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Eng SW/1Get Knowledge/CICD.canvas",
+                "file": "Eng SW/1Get Started/CI Flows.canvas",
                 "viewState": {
-                  "x": -43,
-                  "y": 533.8488842931879,
-                  "zoom": -1.1499674893159908
+                  "x": -162.5,
+                  "y": 590,
+                  "zoom": -1.043223575650516
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "CICD"
+              "title": "CI Flows"
             }
           }
         ]
@@ -183,28 +183,41 @@
       "bases:Create new base": false
     }
   },
-  "active": "bcfdaf663023d5ff",
+  "active": "73da04b5a7d35f76",
   "lastOpenFiles": [
+    "Eng SW/1Get Started/CD Flows.png",
+    "kim7s knowledge model/Kim7s knowledge model.png",
+    "kim7s knowledge model/Kim7s knowledge model.canvas",
+    "CV MindMap.canvas",
+    "Eng SW/2Get Knowledge/CICD Mindmap.canvas",
+    "Eng SW/2Get Knowledge/CICD Mindmap.png",
+    "Eng SW/1Get Started/Simple Pipeline.canvas",
+    "Eng SW/1Get Started/Simple Pipeline.png",
+    "Eng SW/1Get Started/CI Flows.canvas",
+    "Eng SW/1Get Started/CI Flows.png",
+    "Eng SW/1Get Started/CD Flows.canvas",
+    "Eng SW/1Get Started/CI Simple Flow.md",
+    "Grafana/3Get Help",
+    "Grafana/1Get Started",
+    "Grafana/2Get Knowledge",
+    "Grafana",
     "Eng SW/0Get Onboarded/Untitled.md",
-    "Eng SW/0Get Onboarded/Simple Pipeline.canvas",
-    "Eng SW/1Get Knowledge/CICD.canvas",
-    "Eng SW/2Get Help",
-    "Eng SW/1Get Knowledge",
-    "Eng SW/0Get Onboarded",
+    "Eng SW/3Get Help",
+    "Eng SW/2Get Knowledge",
+    "Eng SW/1Get Started",
     "Eng SW/Untitled.base",
     "Eng SW/Untitled.md",
     "Linux/0Tips.md",
     "Eng SW",
-    "K8S/0Get Onboarded/DIY - k8s at home.md",
+    "K8S/1Get Started/DIY - k8s at home.md",
     "README.md",
-    "K8S/0Get Onboarded",
+    "K8S/1Get Started",
     "ELK/ECK/2Get Knowledge/Write data.md",
     "K8S/3Get Help/Scheduler do not respect Rolling Update.md",
     "K8S/0Tips.md",
     "K8S/3Get Help/Untitled.md",
     "K8S/1Tag.md",
     "ELK/Filebeat/3Get Help/ES Performance links mindmap.canvas",
-    "K8S/3Get Help",
     "ELK/zSource.md",
     "ELK/Filebeat/3Get Help/Performance Issues.md",
     "ELK/Filebeat/3Get Help/Metrics.md",
@@ -212,21 +225,15 @@
     "ELK/Filebeat/3Get Help/Configuration Issues.md",
     "ELK/ECK/2Get Knowledge/ES Architecture.canvas",
     "ELK/ECK/3Get Help/Indexing issues.md",
-    "kim7s knowledge model/Kim7s knowledge model.canvas",
     "kim7s knowledge model/CHANGELOG.md",
     "kim7s knowledge model/0Tags.md",
     "ELK/1Tags.md",
     "ELK/ECK/2Get Knowledge/Ingest Nodes.md",
     "ELK/ECK/3Get Help/images/node_indexing_rate.png",
     "ELK/0Tips.md",
-    "ELK/ECK/3Get Help/images",
     "ELK/ECK/3Get Help/Ingestion pipeline issues.md",
     "ELK/ECK/3Get Help/Troubleshoot.md",
-    "ELK/ECK/3Get Help",
     "ELK/ECK/2Get Knowledge/Master Nodes.md",
-    "ELK/ECK/2Get Knowledge/Data Nodes.md",
-    "ELK/ECK/2Get Knowledge",
-    "ELK/Filebeat/2Get Knowledge/Filebeat Architecture overview.canvas",
-    "CV MindMap.canvas"
+    "ELK/Filebeat/2Get Knowledge/Filebeat Architecture overview.canvas"
   ]
 }
