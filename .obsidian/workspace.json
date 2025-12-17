@@ -180,10 +180,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "2221937f892e28fb",
+  "active": "8c91931d3cc97b77",
   "lastOpenFiles": [
-    "Linux/0Get Started/kim7s-ohmyposh-theme.png",
     "Linux/0Get Started/ansi-color-code.png",
+    "Linux/0Get Started/kim7s-ohmyposh-theme.png",
+    "ansi-color-.md",
     "Linux/0Get Started/Oh My Posh.md",
     "().md",
     "K8S/0Tips.md",
@@ -232,7 +233,6 @@
     "ELK/ECK/2Get Knowledge/Ingest Nodes.md",
     "ELK/ECK/3Get Help/images/node_indexing_rate.png",
     "ELK/0Tips.md",
-    "ELK/ECK/3Get Help/Ingestion pipeline issues.md",
     "ELK/Filebeat/2Get Knowledge/Filebeat Architecture overview.canvas"
   ]
 }

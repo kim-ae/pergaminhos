@@ -3,7 +3,7 @@
 * You need to be using one of those shells: bash, cmd, elvish, fish, nu powershell, xonsh and zsh.
 * You need to have curl installed.
 * Your terminal must at least support ANSI 256 color code, for that you can get the [this script] (https://github.com/kim-ae/environment-setup/blob/main/tools/.functions.zsh#L21-L28)and execute, it should show 256 colors like this:
-  ![[ansi-color-code.png]]
+  ![ANSI Colors](ansi-color-code.png)
 ## How to install
 1. Install oh my posh: `curl -s https://ohmyposh.dev/install.sh | bash -s`
 2. Enable it in your rc file by adding the following in the end of the file: `eval "$(oh-my-posh init zsh --config sometheme)"`, the theme names can be found [here](https://ohmyposh.dev/docs/themes)
@@ -16,7 +16,7 @@
 
 ## I want some cool ready to use theme
 You can use my theme that I have publicly available on my [environment setup](https://github.com/kim-ae/environment-setup/blob/main/configs/kim7s.darkblood.toml) repository, it looks like this:
-![[kim7s-ohmyposh-theme.png]]
+![kim7s theme](kim7s-ohmyposh-theme.png)
 My theme configurations:
 ### Upper left segment
 * Current path
