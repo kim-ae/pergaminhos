@@ -4,24 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "99e3f710586f1b98",
+        "id": "4ac47d040bc95379",
         "type": "tabs",
         "children": [
           {
-            "id": "73da04b5a7d35f76",
+            "id": "8c91931d3cc97b77",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Eng SW/1Get Started/CI Flows.canvas",
-                "viewState": {
-                  "x": -162.5,
-                  "y": 590,
-                  "zoom": -1.043223575650516
-                }
+                "file": "Linux/0Get Started/Oh My Posh.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "CI Flows"
+              "icon": "lucide-file",
+              "title": "Oh My Posh"
             }
           }
         ]
@@ -81,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5
+    "width": 200
   },
   "right": {
     "id": "5795367d6e176bea",
@@ -183,19 +180,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "73da04b5a7d35f76",
+  "active": "2221937f892e28fb",
   "lastOpenFiles": [
-    "Eng SW/1Get Started/CD Flows.png",
-    "kim7s knowledge model/Kim7s knowledge model.png",
-    "kim7s knowledge model/Kim7s knowledge model.canvas",
+    "Linux/0Get Started/kim7s-ohmyposh-theme.png",
+    "Linux/0Get Started/ansi-color-code.png",
+    "Linux/0Get Started/Oh My Posh.md",
+    "().md",
+    "K8S/0Tips.md",
+    "Linux/0Get Started",
     "CV MindMap.canvas",
-    "Eng SW/2Get Knowledge/CICD Mindmap.canvas",
+    "kim7s knowledge model/Kim7s knowledge model.png",
     "Eng SW/2Get Knowledge/CICD Mindmap.png",
-    "Eng SW/1Get Started/Simple Pipeline.canvas",
-    "Eng SW/1Get Started/Simple Pipeline.png",
+    "Eng SW/2Get Knowledge/CICD Mindmap.canvas",
+    "Eng SW/1Get Started/CD Flows.canvas",
     "Eng SW/1Get Started/CI Flows.canvas",
     "Eng SW/1Get Started/CI Flows.png",
-    "Eng SW/1Get Started/CD Flows.canvas",
+    "Eng SW/1Get Started/Simple Pipeline.canvas",
+    "Eng SW/1Get Started/CD Flows.png",
+    "kim7s knowledge model/Kim7s knowledge model.canvas",
+    "Eng SW/1Get Started/Simple Pipeline.png",
     "Eng SW/1Get Started/CI Simple Flow.md",
     "Grafana/3Get Help",
     "Grafana/1Get Started",
@@ -211,10 +214,8 @@
     "Eng SW",
     "K8S/1Get Started/DIY - k8s at home.md",
     "README.md",
-    "K8S/1Get Started",
     "ELK/ECK/2Get Knowledge/Write data.md",
     "K8S/3Get Help/Scheduler do not respect Rolling Update.md",
-    "K8S/0Tips.md",
     "K8S/3Get Help/Untitled.md",
     "K8S/1Tag.md",
     "ELK/Filebeat/3Get Help/ES Performance links mindmap.canvas",
@@ -232,8 +233,6 @@
     "ELK/ECK/3Get Help/images/node_indexing_rate.png",
     "ELK/0Tips.md",
     "ELK/ECK/3Get Help/Ingestion pipeline issues.md",
-    "ELK/ECK/3Get Help/Troubleshoot.md",
-    "ELK/ECK/2Get Knowledge/Master Nodes.md",
     "ELK/Filebeat/2Get Knowledge/Filebeat Architecture overview.canvas"
   ]
 }

@@ -15,3 +15,9 @@ chroot /host /bin/systemctl list-units --type=service
 ```
 kubectl delete pod <pod-name> --grace-period=0 --force
 ```
+
+## Helm Rollback
+#cli #k8s #helm #rollback 
+```
+helm rollback <Helm name> <generation> -n <namespace>
+```
