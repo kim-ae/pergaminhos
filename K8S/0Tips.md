@@ -21,3 +21,10 @@ kubectl delete pod <pod-name> --grace-period=0 --force
 ```
 helm rollback <Helm name> <generation> -n <namespace>
 ```
+
+## Useful pods
+### Check TLS connection
+#cli #k8s #pod #openssl #tls
+```
+kubectl run checkssl --image=alpine/openssl --restart=Never -it --command -- /bin/sh 
+```

@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"93846cf3090b6f89","type":"text","text":"What is the image registry?","x":0,"y":-140,"width":250,"height":60},
+		{"id":"6744b781715f6502","type":"text","text":"Deployment","x":-460,"y":-180,"width":250,"height":60},
+		{"id":"f2eb96cd7380e2a9","type":"text","text":"ImagePolicy","x":-460,"y":380,"width":250,"height":60},
+		{"id":"55f96e3085782de7","type":"text","text":"ImageRepository","x":-460,"y":480,"width":250,"height":60},
+		{"id":"bb4e9e2619a93de3","type":"text","text":"Is the application stateless?","x":0,"y":-240,"width":250,"height":60},
+		{"id":"551f788a61282ffc","type":"text","text":"I would like to configure the tool to have steps that could be required or optional","x":-1000,"y":-20,"width":250,"height":120},
+		{"id":"b578d0401e3e73e5","type":"text","text":"Do you want automatic update?","x":0,"y":410,"width":250,"height":60},
+		{"id":"f8e119dde3253c0b","type":"text","text":"What is the image name","x":320,"y":-140,"width":250,"height":60},
+		{"id":"3b6ca06c32d88e09","type":"text","text":"Provide a image version","x":620,"y":-140,"width":250,"height":60},
+		{"id":"079e4c96413d8657","type":"text","text":"Is your application nodejs or java?","x":0,"y":-20,"width":250,"height":60},
+		{"id":"cdb1b63b5730a6f9","type":"text","text":"Is this serve port correct?","x":320,"y":-20,"width":250,"height":60},
+		{"id":"d77eb91c27466d75","type":"text","text":"Do you have any metrics server?","x":0,"y":70,"width":250,"height":60},
+		{"id":"71fa46b4ee493478","type":"text","text":"ServiceMonitor","x":-460,"y":70,"width":250,"height":60},
+		{"id":"e49800b287c71d78","type":"text","text":"PodMonitor","x":-460,"y":190,"width":250,"height":60},
+		{"id":"17e2a5f71c0dd20b","type":"text","text":"Others will access your application?","x":0,"y":220,"width":250,"height":60},
+		{"id":"d9622c584bd4c7e6","type":"text","text":"Service","x":-460,"y":280,"width":250,"height":60},
+		{"id":"99d0e89aeaf1b16d","type":"text","text":"Will you need high availability?","x":20,"y":580,"width":250,"height":60},
+		{"id":"7ce5c23457afb8c7","type":"text","text":"HPA","x":-460,"y":580,"width":250,"height":60},
+		{"id":"b47bb6abccc93921","x":-980,"y":-360,"width":250,"height":60,"type":"text","text":"Language?"},
+		{"id":"43f703aad52d88c4","x":-660,"y":-360,"width":250,"height":60,"type":"text","text":"Should be accessible"},
+		{"id":"a89d7d9155b41822","x":-910,"y":-260,"width":250,"height":60,"type":"text","text":"The developers will be the main customers"},
+		{"id":"ee29b4e73823af23","x":-1020,"y":-180,"width":250,"height":90,"type":"text","text":"Bash is kind of unix bound, windows users might have a bad time using the tool"}
+	],
+	"edges":[
+		{"id":"d2cda66b6444e4ab","fromNode":"bb4e9e2619a93de3","fromSide":"left","toNode":"6744b781715f6502","toSide":"right"},
+		{"id":"12e3a72e4f10fd2b","fromNode":"93846cf3090b6f89","fromSide":"left","toNode":"6744b781715f6502","toSide":"right"},
+		{"id":"509bfdaa5caf0106","fromNode":"93846cf3090b6f89","fromSide":"right","toNode":"f8e119dde3253c0b","toSide":"left"},
+		{"id":"3501339b45fda9f8","fromNode":"f8e119dde3253c0b","fromSide":"right","toNode":"3b6ca06c32d88e09","toSide":"left"},
+		{"id":"0b6cfb99c5f28eb5","fromNode":"079e4c96413d8657","fromSide":"left","toNode":"6744b781715f6502","toSide":"right"},
+		{"id":"afe19acaddcadfd9","fromNode":"079e4c96413d8657","fromSide":"right","toNode":"cdb1b63b5730a6f9","toSide":"left"},
+		{"id":"a44d775e2b9833fd","fromNode":"d77eb91c27466d75","fromSide":"left","toNode":"6744b781715f6502","toSide":"right"},
+		{"id":"d1355c04fd002b9f","fromNode":"d77eb91c27466d75","fromSide":"left","toNode":"e49800b287c71d78","toSide":"right"},
+		{"id":"f9dc1c0c8cfefb57","fromNode":"d77eb91c27466d75","fromSide":"left","toNode":"71fa46b4ee493478","toSide":"right"},
+		{"id":"06e409cb32e2ad5e","fromNode":"17e2a5f71c0dd20b","fromSide":"left","toNode":"d9622c584bd4c7e6","toSide":"right"},
+		{"id":"975b0feca5a71321","fromNode":"99d0e89aeaf1b16d","fromSide":"left","toNode":"7ce5c23457afb8c7","toSide":"right"},
+		{"id":"9c90254248f409be","fromNode":"b578d0401e3e73e5","fromSide":"left","toNode":"f2eb96cd7380e2a9","toSide":"right"},
+		{"id":"c433c5819ff0df78","fromNode":"b578d0401e3e73e5","fromSide":"left","toNode":"55f96e3085782de7","toSide":"right"}
+	]
+}
