@@ -39,12 +39,17 @@
             "id": "c1cf5281259c0c5f",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "canvas",
               "state": {
-                "currentVersion": "1.11.7"
+                "file": "CV MindMap.canvas",
+                "viewState": {
+                  "x": -345,
+                  "y": 555,
+                  "zoom": -2.024436607232132
+                }
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.7"
+              "icon": "lucide-layout-dashboard",
+              "title": "CV MindMap"
             }
           }
         ],
@@ -207,11 +212,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "c1cf5281259c0c5f",
+  "active": "2221937f892e28fb",
   "lastOpenFiles": [
+    "CV MindMap.canvas",
+    "feedback.md",
     "My Home Lab/Questions.md",
     "My Home Lab/Planning.md",
-    "feedback.md",
     "Grafana/1Get Started/K6.md",
     "K8S/1Get Started/Untitled.md",
     "K8S/3Get Help/Scheduler do not respect Rolling Update.md",
@@ -231,7 +237,6 @@
     "Linux/0Get Started/kim7s-ohmyposh-theme.png",
     "().md",
     "Linux/0Get Started",
-    "CV MindMap.canvas",
     "kim7s knowledge model/Kim7s knowledge model.png",
     "Eng SW/2Get Knowledge/CICD Mindmap.png",
     "Eng SW/2Get Knowledge/CICD Mindmap.canvas",
@@ -260,7 +265,6 @@
     "ELK/Filebeat/3Get Help/Performance Issues.md",
     "ELK/Filebeat/3Get Help/Metrics.md",
     "ELK/Filebeat/zSource.md",
-    "ELK/Filebeat/3Get Help/Configuration Issues.md",
     "ELK/ECK/2Get Knowledge/ES Architecture.canvas",
     "ELK/ECK/3Get Help/images/node_indexing_rate.png"
   ]
