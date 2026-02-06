@@ -28,3 +28,5 @@ helm rollback <Helm name> <generation> -n <namespace>
 ```
 kubectl run checkssl --image=alpine/openssl --restart=Never -it --command -- /bin/sh 
 ```
+
+CPU Wait time Metric: container_pressure_cpu_waiting_seconds_total

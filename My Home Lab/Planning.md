@@ -17,7 +17,13 @@
 * TrueNAS
 	* NextCloud
 * Use truenas for PV
-* Reverse proxy
+* Reverse proxy ( nginx? ) - should I use dynamic mapping for DNS with cloud flare?
+* AnyType
+* Install tailscale to enable usage outside with VPN
+* I do want to improve my knowledge links page, I could use a database to be able to add through admin panel more information instead placing it in the code and having to deploy a new thing. Might be that I could do it by just suing anytype (?)
+* PiHole
+* Bind9
+* Install proxmox to try it in a notebook
 * Object Storage
-* PfSense - forewall
+* PfSense - firewall
 * Install local provisioner https://github.com/kubernetes-sigs/sig-storage-local-static-provisioner
