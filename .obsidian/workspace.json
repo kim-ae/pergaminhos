@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "My Home Lab/Planning.md",
+                "file": "Studies/My Home Lab/Planning.md",
                 "mode": "source",
                 "source": false
               },
@@ -39,17 +39,14 @@
             "id": "c1cf5281259c0c5f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "CV MindMap.canvas",
-                "viewState": {
-                  "x": -345,
-                  "y": 555,
-                  "zoom": -2.024436607232132
-                }
+                "file": "Studies/My Home Lab/Planning.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "CV MindMap"
+              "icon": "lucide-file",
+              "title": "Planning"
             }
           }
         ],
@@ -212,23 +209,27 @@
       "bases:Create new base": false
     }
   },
-  "active": "2221937f892e28fb",
+  "active": "c1cf5281259c0c5f",
   "lastOpenFiles": [
+    "Studies/Ops/ArgoCD.md",
     "CV MindMap.canvas",
+    "Studies/Ops",
+    "Studies/Development",
+    "Studies",
     "feedback.md",
-    "My Home Lab/Questions.md",
-    "My Home Lab/Planning.md",
+    "Studies/My Home Lab/Questions.md",
+    "Studies/My Home Lab/Planning.md",
     "Grafana/1Get Started/K6.md",
     "K8S/1Get Started/Untitled.md",
     "K8S/3Get Help/Scheduler do not respect Rolling Update.md",
     "K8S/2Get Knowledge/How does CPU works.md",
     "K8S/0Tips.md",
     "K8S/2Get Knowledge",
-    "My Home Lab/Readme.md",
-    "My Home Lab/kim7s architecture.canvas",
+    "Studies/My Home Lab/Readme.md",
+    "Studies/My Home Lab/kim7s architecture.canvas",
     "README.md",
     "Projects/k8s-scaffolding/Idea.canvas",
-    "My Home Lab",
+    "Studies/My Home Lab",
     "ansi-color-.md",
     "Linux/0Get Started/Oh My Posh.md",
     "Projects/k8s-scaffolding",
@@ -250,10 +251,7 @@
     "Eng SW/1Get Started/CI Simple Flow.md",
     "Grafana/3Get Help",
     "Grafana/1Get Started",
-    "Grafana/2Get Knowledge",
-    "Grafana",
     "Eng SW/0Get Onboarded/Untitled.md",
-    "Eng SW/3Get Help",
     "Eng SW/Untitled.md",
     "Linux/0Tips.md",
     "K8S/1Get Started/DIY - k8s at home.md",
@@ -264,7 +262,6 @@
     "ELK/zSource.md",
     "ELK/Filebeat/3Get Help/Performance Issues.md",
     "ELK/Filebeat/3Get Help/Metrics.md",
-    "ELK/Filebeat/zSource.md",
     "ELK/ECK/2Get Knowledge/ES Architecture.canvas",
     "ELK/ECK/3Get Help/images/node_indexing_rate.png"
   ]
