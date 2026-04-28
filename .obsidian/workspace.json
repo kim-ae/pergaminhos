@@ -41,6 +41,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Linux/0Tips.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0Tips"
+            }
+          },
+          {
+            "id": "ff9f6eeb68103ecd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Studies/My Home Lab/Planning.md",
                 "mode": "source",
                 "source": false
@@ -48,9 +62,38 @@
               "icon": "lucide-file",
               "title": "Planning"
             }
+          },
+          {
+            "id": "d34d10de346a4602",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ideas.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ideas"
+            }
+          },
+          {
+            "id": "bde504e94607d169",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "K8S/AIOps/Prompt.md",
+                "bFile": "K8S/AIOps/Prompt.md",
+                "aRef": "HEAD",
+                "bRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: Prompt"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -209,35 +252,48 @@
       "bases:Create new base": false
     }
   },
-  "active": "c1cf5281259c0c5f",
+  "active": "bde504e94607d169",
   "lastOpenFiles": [
+    "Studies/My Home Lab/Readme.md",
     "Studies/Ops/ArgoCD.md",
     "CV MindMap.canvas",
+    "Ideas.md",
+    "README.md",
+    "Untitled.md",
+    "Skills.md",
+    "Studies/AI/Readme.md",
+    "Studies/My Home Lab/kim7s architecture.canvas",
+    "Studies/My Home Lab/Questions.md",
+    "Studies/AI",
+    "Studies/My Home Lab/Planning.md",
+    "Linux/1Get Knowledge/How to cover delete data.md",
+    "Princípios Mecânicos em Prótese Fixa e Coroas.md",
+    "Untitled 1.md",
+    "Linux/0Tips.md",
+    "Linux/0Get Started/Which \"linux\"?.md",
+    "Untitled",
+    "K8S/AIOps/Prompt.md",
+    "Linux/0Get Started/Which Terminal Emulator?.md",
+    "K8S/AIOps",
+    "Linux/1Get Knowledge",
+    "Linux/Untitled.md",
+    "Azure/2Get Help/Terraform.md",
+    "Azure/2Get Help",
+    "Azure",
     "Studies/Ops",
     "Studies/Development",
     "Studies",
     "feedback.md",
-    "Studies/My Home Lab/Questions.md",
-    "Studies/My Home Lab/Planning.md",
     "Grafana/1Get Started/K6.md",
     "K8S/1Get Started/Untitled.md",
     "K8S/3Get Help/Scheduler do not respect Rolling Update.md",
     "K8S/2Get Knowledge/How does CPU works.md",
     "K8S/0Tips.md",
     "K8S/2Get Knowledge",
-    "Studies/My Home Lab/Readme.md",
-    "Studies/My Home Lab/kim7s architecture.canvas",
-    "README.md",
     "Projects/k8s-scaffolding/Idea.canvas",
-    "Studies/My Home Lab",
     "ansi-color-.md",
-    "Linux/0Get Started/Oh My Posh.md",
-    "Projects/k8s-scaffolding",
-    "Projects",
     "Linux/0Get Started/ansi-color-code.png",
     "Linux/0Get Started/kim7s-ohmyposh-theme.png",
-    "().md",
-    "Linux/0Get Started",
     "kim7s knowledge model/Kim7s knowledge model.png",
     "Eng SW/2Get Knowledge/CICD Mindmap.png",
     "Eng SW/2Get Knowledge/CICD Mindmap.canvas",
@@ -248,20 +304,7 @@
     "Eng SW/1Get Started/CD Flows.png",
     "kim7s knowledge model/Kim7s knowledge model.canvas",
     "Eng SW/1Get Started/Simple Pipeline.png",
-    "Eng SW/1Get Started/CI Simple Flow.md",
-    "Grafana/3Get Help",
-    "Grafana/1Get Started",
-    "Eng SW/0Get Onboarded/Untitled.md",
-    "Eng SW/Untitled.md",
-    "Linux/0Tips.md",
-    "K8S/1Get Started/DIY - k8s at home.md",
-    "ELK/ECK/2Get Knowledge/Write data.md",
-    "K8S/3Get Help/Untitled.md",
-    "K8S/1Tag.md",
     "ELK/Filebeat/3Get Help/ES Performance links mindmap.canvas",
-    "ELK/zSource.md",
-    "ELK/Filebeat/3Get Help/Performance Issues.md",
-    "ELK/Filebeat/3Get Help/Metrics.md",
     "ELK/ECK/2Get Knowledge/ES Architecture.canvas",
     "ELK/ECK/3Get Help/images/node_indexing_rate.png"
   ]

@@ -2,27 +2,28 @@
 	"nodes":[
 		{"id":"1d09dc4040988840","type":"group","x":-200,"y":160,"width":1435,"height":1040,"label":"K8S"},
 		{"id":"f3d0e2ed988bbc68","type":"text","text":"http-echo","x":360,"y":180,"width":250,"height":60},
-		{"id":"2e598519e01fe928","type":"text","text":"router","x":-340,"y":-100,"width":250,"height":60},
 		{"id":"a5ef8c8aaf2fcf1b","type":"text","text":"registro.br - kim.tec.br","x":-590,"y":-300,"width":250,"height":60},
 		{"id":"aa0af396a6a1cea3","type":"text","text":"TP Link Dynamic DNS","x":-340,"y":40,"width":250,"height":60},
 		{"id":"d5f59ed79e514d3f","type":"text","text":"Controlplane","x":80,"y":-160,"width":250,"height":60},
 		{"id":"bf0c16eed79dadc1","type":"text","text":"node01","x":80,"y":-40,"width":250,"height":60},
 		{"id":"4520b30d246bc74d","type":"text","text":"KGateway","x":-180,"y":280,"width":250,"height":60},
 		{"id":"db00615eef6a2d73","type":"text","text":"Grafana Cloud","x":1110,"y":-10,"width":250,"height":60},
-		{"id":"4737b76b7f2bcd34","type":"text","text":"MetalLB","x":-170,"y":520,"width":250,"height":60},
 		{"id":"6d615c97c0b45f08","type":"text","text":"Yopass","x":360,"y":280,"width":250,"height":60},
 		{"id":"8c5a46d1ca47656d","type":"text","text":"Version Management","x":360,"y":370,"width":250,"height":60},
 		{"id":"da87f408300f0d54","type":"text","text":"Grafana","x":360,"y":460,"width":250,"height":60},
 		{"id":"1a98eccdff6d41e8","type":"text","text":"no-as-a-service","x":360,"y":550,"width":250,"height":60},
 		{"id":"603f2d28ec358dc3","type":"text","text":"sealed Secrets","x":860,"y":430,"width":250,"height":60},
 		{"id":"4c18e618def1869a","type":"text","text":"Cillium - internal network","x":860,"y":520,"width":250,"height":60},
-		{"id":"e21e891f3c034170","type":"text","text":"Grafana Alloy Logs","x":860,"y":250,"width":250,"height":60},
 		{"id":"c85d803b1ee93760","type":"text","text":"Local Storage","x":760,"y":720,"width":250,"height":60},
 		{"id":"1c1733147d1739b0","type":"text","text":"kube-state-metrics","x":760,"y":920,"width":250,"height":60},
 		{"id":"1960d9cc64d03ac9","type":"text","text":"metric-server","x":760,"y":1000,"width":250,"height":60},
+		{"id":"82016fd2f401af40","type":"text","text":"loki","x":760,"y":1080,"width":250,"height":60},
+		{"id":"e21e891f3c034170","type":"text","text":"Grafana Alloy Logs","x":860,"y":250,"width":250,"height":60},
 		{"id":"fdff8b0f11977195","type":"text","text":"Prometheus","x":860,"y":340,"width":250,"height":60},
 		{"id":"6ef9430b80e86b92","type":"text","text":"node-exporter","x":760,"y":840,"width":250,"height":60},
-		{"id":"82016fd2f401af40","x":760,"y":1080,"width":250,"height":60,"type":"text","text":"loki"}
+		{"id":"4737b76b7f2bcd34","type":"text","text":"MetalLB","x":-180,"y":520,"width":250,"height":60},
+		{"id":"2e598519e01fe928","type":"text","text":"router","x":-340,"y":-100,"width":250,"height":60},
+		{"id":"975e82f9207b751f","type":"text","text":"DNS Server - \\*.internal.kim.tec.br","x":-90,"y":-420,"width":295,"height":60}
 	],
 	"edges":[
 		{"id":"b83808d6d60c73e5","fromNode":"2e598519e01fe928","fromSide":"bottom","toNode":"aa0af396a6a1cea3","toSide":"top"},
@@ -45,6 +46,8 @@
 		{"id":"ad36f99f0d188b64","fromNode":"fdff8b0f11977195","fromSide":"right","toNode":"6ef9430b80e86b92","toSide":"right"},
 		{"id":"0eb276d4389e1b71","fromNode":"fdff8b0f11977195","fromSide":"right","toNode":"1c1733147d1739b0","toSide":"right"},
 		{"id":"458ff1733f8b463a","fromNode":"fdff8b0f11977195","fromSide":"right","toNode":"1960d9cc64d03ac9","toSide":"right"},
-		{"id":"32bb88c0f9e53e2a","fromNode":"da87f408300f0d54","fromSide":"right","toNode":"82016fd2f401af40","toSide":"left"}
+		{"id":"32bb88c0f9e53e2a","fromNode":"da87f408300f0d54","fromSide":"right","toNode":"82016fd2f401af40","toSide":"left"},
+		{"id":"c2795886e6ceb7ca","fromNode":"4737b76b7f2bcd34","fromSide":"left","toNode":"2e598519e01fe928","toSide":"left"},
+		{"id":"36032a58357a3059","fromNode":"975e82f9207b751f","fromSide":"bottom","toNode":"2e598519e01fe928","toSide":"top","label":"DHCP Server"}
 	]
 }

@@ -1,0 +1,11 @@
+## Terminals
+* Terminator
+* Kitty
+* Hyper
+* Konsole
+* Contour
+* Wezterm
+* Ghostty
+* Alacritty
+* Warp
+* Waveterm

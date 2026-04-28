@@ -1,0 +1,13 @@
+- What are models (opus, sonnet, blablabla)? [https://smartdev.com/understanding-ai-models-vs-ai-agents-key-differences-applications-and-future-trends/](https://smartdev.com/understanding-ai-models-vs-ai-agents-key-differences-applications-and-future-trends/)
+- What are agents? [https://github.com/resources/articles/what-are-ai-agents](https://github.com/resources/articles/what-are-ai-agents)
+- Prompt engineering:
+    - Basics: [https://www.promptingguide.ai/introduction/elements](https://www.promptingguide.ai/introduction/elements)
+    - System Prompt: [https://medium.com/@larry_6938/the-importance-of-system-prompts-for-llms-4b07a765b9a6](https://medium.com/@larry_6938/the-importance-of-system-prompts-for-llms-4b07a765b9a6)
+    - Zero Shot prompt: [https://www.promptingguide.ai/techniques/zeroshot](https://www.promptingguide.ai/techniques/zeroshot)
+    - Few Shot prompt: [https://www.promptingguide.ai/techniques/fewshot](https://www.promptingguide.ai/techniques/fewshot)
+    - Chain of Thought Prompt: [https://www.promptingguide.ai/techniques/cot](https://www.promptingguide.ai/techniques/cot)
+- Agents: [https://www.promptingguide.ai/agents/introduction](https://www.promptingguide.ai/agents/introduction) [https://medium.com/@vinodkrane/hey-there-a69c3d9a15b1](https://medium.com/@vinodkrane/hey-there-a69c3d9a15b1)
+    - Instructions:[https://dust.tt/blog/how-to-write-ai-agent-instructions](https://dust.tt/blog/how-to-write-ai-agent-instructions)
+    - MCP: [https://modelcontextprotocol.io/docs/getting-started/intro](https://modelcontextprotocol.io/docs/getting-started/intro)
+    - Skills: [https://agentskills.io/home](https://agentskills.io/home) 
+    - Multi-agent System: [https://www.ibm.com/think/topics/multiagent-system](https://www.ibm.com/think/topics/multiagent-system) 

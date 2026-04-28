@@ -23,3 +23,8 @@ Check listening ports
 ```
 sudo netstat -ano | grep LISTEN
 ```
+Force Resolve to use specific DNS
+```
+sudo resolvectl revert wlp0s20f3
+sudo resolvectl dns wlp0s20f3 192.168.10.3   
+```
