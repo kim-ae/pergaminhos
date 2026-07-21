@@ -1,0 +1,28 @@
+@startuml nat-layers-combined
+participant "Mobile\n100.64.0.5" as Mobile
+participant "Connector pod netns\n(Tailscale SNAT)" as TsSnat
+participant "Cilium TCX hook\n(DNAT, bpf-lb-external-clusterip)" as Dnat
+participant "Cilium masquerade\n(cross-node SNAT)" as Masq
+participant "Service pod\n10.0.1.56" as Pod
+
+Mobile -> TsSnat : src=100.64.0.5 dst=192.168.10.2:443
+TsSnat -> TsSnat : SNAT (snatSubnetRoutes)\nsrc=100.64.0.5 -> src=10.0.1.22
+TsSnat -> Dnat : src=10.0.1.22 dst=192.168.10.2
+Dnat -> Dnat : DNAT\ndst=192.168.10.2 -> dst=10.0.1.56
+Dnat -> Masq : src=10.0.1.22 dst=10.0.1.56
+Masq -> Masq : SNAT (masquerade, cross-node)\nsrc=10.0.1.22 -> src=192.168.0.102
+Masq -> Pod : src=192.168.0.102 dst=10.0.1.56
+
+Pod --> Masq : response\nsrc=10.0.1.56 dst=192.168.0.102
+Masq --> Dnat : reverse masquerade\nsrc=10.0.1.56 dst=10.0.1.22
+Dnat --> TsSnat : reverse DNAT\nsrc=192.168.10.2 dst=10.0.1.22
+TsSnat --> Mobile : reverse Tailscale SNAT\nsrc=192.168.10.2 dst=100.64.0.5
+
+note over Mobile, Pod
+  Three independent NAT layers, each tracked
+  separately by conntrack, unwound in reverse
+  order on the way back - forward order is
+  Tailscale SNAT -> Cilium DNAT -> Cilium
+  masquerade SNAT; return order is the mirror.
+end note
+@enduml

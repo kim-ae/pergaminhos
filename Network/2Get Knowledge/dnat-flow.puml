@@ -1,0 +1,22 @@
+@startuml dnat-flow
+skinparam sequenceMessageAlign center
+
+participant "Client\n192.168.0.221" as Client
+participant "NAT device\n(DNAT rule)" as NAT
+participant "Conntrack table" as CT
+participant "Real backend\n10.0.1.56:80" as Backend
+
+Client -> NAT : src=192.168.0.221 dst=192.168.10.2:80
+NAT -> CT : record flow\n(192.168.10.2:80 <-> 10.0.1.56:80)
+NAT -> Backend : DNAT applied\nsrc=192.168.0.221 dst=10.0.1.56:80
+
+Backend --> NAT : response\nsrc=10.0.1.56:80 dst=192.168.0.221
+NAT -> CT : lookup flow -> reverse DNAT
+NAT --> Client : src=192.168.10.2:80 dst=192.168.0.221
+
+note over Client
+  Client only ever sees 192.168.10.2 -
+  it never learns the real backend
+  address 10.0.1.56.
+end note
+@enduml

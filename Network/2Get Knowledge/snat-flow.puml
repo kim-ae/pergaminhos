@@ -1,0 +1,22 @@
+@startuml snat-flow
+skinparam sequenceMessageAlign center
+
+participant "Pod\n10.0.1.22" as Pod
+participant "NAT device\n(SNAT / masquerade)" as NAT
+participant "Conntrack table" as CT
+participant "External server\n8.8.8.8" as Ext
+
+Pod -> NAT : src=10.0.1.22 dst=8.8.8.8
+NAT -> CT : record flow\n(10.0.1.22 <-> 192.168.0.102)
+NAT -> Ext : SNAT applied\nsrc=192.168.0.102 (node IP) dst=8.8.8.8
+
+Ext --> NAT : response\nsrc=8.8.8.8 dst=192.168.0.102
+NAT -> CT : lookup flow -> reverse SNAT
+NAT --> Pod : src=8.8.8.8 dst=10.0.1.22
+
+note over Ext
+  External server only ever sees the
+  node IP 192.168.0.102 - it never
+  learns the pod's real address.
+end note
+@enduml
