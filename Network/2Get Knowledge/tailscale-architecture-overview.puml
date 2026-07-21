@@ -1,0 +1,29 @@
+@startuml tailscale-architecture-overview
+skinparam componentStyle rectangle
+
+actor "Phone\n(Tailscale client)" as Phone
+cloud "Tailscale Cloud" {
+  component "Coordination Server\n(control.ts)" as Control
+  component "DERP Relay\n(fallback only)" as Derp
+}
+node "Home Cluster\n(Tailscale client)" as Cluster
+
+Phone <..> Control : HTTPS REST\n(control plane only,\nnever in data path)
+Cluster <..> Control
+
+Phone <..> Derp : encrypted relay\n(used only if direct fails)
+Cluster <..> Derp
+
+Phone <-> Cluster : direct WireGuard UDP\n(preferred data path)
+
+note right of Control
+  Distributes: public keys,
+  peer endpoints, DERP region
+  assignments, ACL/route policy
+end note
+
+note right of Derp
+  Still end-to-end encrypted -
+  DERP only proxies ciphertext
+end note
+@enduml

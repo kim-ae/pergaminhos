@@ -1,0 +1,35 @@
+@startuml tailscale-packet-journey
+participant "Phone\ncurl 192.168.10.2:80" as Phone
+participant "Phone TUN\n(utun0)" as PhoneTun
+participant "Internet" as Net
+participant "Home router\n177.x.x.x" as Router
+participant "Cluster node\nwlp0s20f3" as Node
+participant "Node tun0" as Tun0
+participant "Cilium eBPF\ncil_from_container" as Cilium
+participant "Backend pod\n10.0.1.56:80" as Pod
+
+Phone -> PhoneTun : connect(192.168.10.2:80)
+PhoneTun -> PhoneTun : route lookup:\n192.168.10.0/24 via Connector (100.64.x.x)
+PhoneTun -> PhoneTun : WireGuard encrypt\nsrc=100.64.0.5 dst=192.168.10.2\nouter UDP src=203.0.113.5 dst=177.x.x.x:41641
+PhoneTun -> Net : UDP packet
+Net -> Router : UDP :41641
+Router -> Node : port-forward / hole-punch NAT state\nUDP :41641 -> 192.168.0.101:41641
+Node -> Node : Tailscale daemon reads,\nWireGuard decrypts\nrecovers src=100.64.0.5 dst=192.168.10.2
+Node -> Tun0 : write raw IP packet
+Tun0 -> Cilium : kernel routes toward Connector pod veth
+Cilium -> Cilium : bpf-lb-external-clusterip=true\nDNAT 192.168.10.2:80 -> 10.0.1.56:80
+Cilium -> Pod : forwarded request
+Pod --> Cilium : response
+Cilium -> Cilium : conntrack reverse DNAT\n10.0.1.56 -> 192.168.10.2
+Cilium --> Tun0 : response via veth
+Tun0 --> Node : response on tun0
+Node --> Router : WireGuard encrypt, UDP out
+Router --> Net : UDP out
+Net --> PhoneTun : UDP to phone's public IP:port
+PhoneTun --> Phone : decrypt, curl receives HTTP response
+
+note over Cilium
+  Without bpf-lb-external-clusterip=true:
+  no DNAT match -> kernel drops the packet.
+end note
+@enduml

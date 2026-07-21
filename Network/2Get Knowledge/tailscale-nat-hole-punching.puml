@@ -1,0 +1,34 @@
+@startuml tailscale-nat-hole-punching
+participant "Phone\n(behind carrier NAT)" as Phone
+participant "STUN server" as Stun
+participant "Home router\n(NAT)" as Router
+participant "Cluster node" as Cluster
+
+Phone -> Stun : query public IP:port
+Stun --> Phone : 203.0.113.5:54321
+
+Cluster -> Stun : query public IP:port
+Stun --> Cluster : 177.x.x.x:41641
+
+par simultaneous send
+  Phone -> Router : UDP to 177.x.x.x:41641
+  Router -> Cluster : forwarded / NAT state created
+else
+  Cluster -> Phone : UDP to 203.0.113.5:54321
+end
+
+note over Phone, Cluster
+  Each NAT device creates a state entry
+  for its own outbound packet, which then
+  accepts the matching inbound reply.
+  Direct WireGuard tunnel now open.
+end note
+
+note over Phone
+  Symmetric NAT (common on carrier
+  networks) assigns a different external
+  port per destination -> the port the
+  cluster expects never matches -> hole
+  punch fails -> falls back to DERP.
+end note
+@enduml
