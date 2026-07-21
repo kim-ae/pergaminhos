@@ -1,0 +1,32 @@
+@startuml arp-scenario1-lan-to-vip
+participant "Machine\n192.168.0.221" as M
+participant "AP\n192.168.0.1" as AP
+participant "Node\n192.168.0.101 (ac:5a:fc:b7)" as Node
+participant "Cilium eBPF" as Cilium
+participant "Service pod\n10.0.1.5" as Pod
+
+M -> M : DNS: *.internal.kim.tec.br -> 192.168.10.2
+M -> M : routing: 192.168.10.2 not in 192.168.0.0/24\n-> send to default gateway 192.168.0.1
+M -> AP : L2 dst=ap-mac, L3 src=192.168.0.221 dst=192.168.10.2
+
+AP -> AP : lookup 192.168.10.2 in ARP table\n(learned via Cilium L2 Announcements)
+AP -> Node : L2 dst=ac:5a:fc:b7, L3 src=192.168.0.221 dst=192.168.10.2
+
+Node -> Cilium : XDP/TC hook intercepts
+Cilium -> Cilium : DNAT dst=192.168.10.2 -> dst=10.0.1.5
+Cilium -> Pod : delivered
+
+Pod --> Cilium : response src=10.0.1.5 dst=192.168.0.221
+Cilium -> Cilium : reverse DNAT (conntrack)\nsrc=192.168.10.2 dst=192.168.0.221
+Cilium --> Node : src=192.168.10.2 dst=192.168.0.221
+Node -> AP : 192.168.0.221 is in 192.168.0.0/24 -> route to AP
+AP -> M : local WiFi client -> forward
+
+note over M, Pod
+  Works because 192.168.0.221 is on the same
+  physical network as the node - the return
+  packet destination is trivially routable, no
+  ARP resolution for the VIP is ever needed on
+  the client's own segment.
+end note
+@enduml

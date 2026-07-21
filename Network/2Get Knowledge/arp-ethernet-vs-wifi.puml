@@ -1,0 +1,31 @@
+@startuml arp-ethernet-vs-wifi
+skinparam sequenceMessageAlign center
+
+box "Ethernet" #F0F8FF
+participant "Host A" as EA
+participant "Switch\n(dumb at L2)" as ESw
+participant "Host B" as EB
+end box
+
+box "WiFi (802.11)" #FFF0F0
+participant "Host A" as WA
+participant "Access Point\n(security-aware L2 bridge)" as WAp
+participant "Host B" as WB
+end box
+
+EA -> ESw : gratuitous ARP\n"I own 192.168.10.0"
+ESw -> EB : flooded to all ports
+note right of ESw : no validation - any host\ncan claim any IP
+
+WA -> WAp : gratuitous ARP\n"I own 192.168.10.0"
+WAp -> WAp : check: is 192.168.10.0\nregistered to this client's MAC?
+WAp -x WB : ARP proxy / DAI drops frame\n(IP not in client's DHCP lease)
+note right of WAp
+  AP tracks "MAC -> owned IP" per
+  associated client. Claiming an
+  extra IP outside that mapping
+  looks like spoofing, so it is
+  filtered - MetalLB L2 VIPs never
+  reach the rest of the network.
+end note
+@enduml

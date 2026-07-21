@@ -1,0 +1,20 @@
+@startuml tailscale-vip-drop-before-fix
+participant "Mobile 4G\n100.64.0.5" as Mobile
+participant "Connector pod\n10.0.1.22 (own netns)" as Pod
+participant "Cilium TCX\nfrom-endpoint hook" as TCX
+participant "Node netns\n192.168.0.102" as Node
+
+Mobile -> Pod : WireGuard, decapsulated\ninner src=100.64.0.5 dst=192.168.10.2
+Pod -> Pod : Tailscale SNAT\nsrc=100.64.0.5 -> src=10.0.1.22
+Pod -> TCX : exits via eth0 (tun-injected,\nno connect() syscall -\ncgroup socket BPF never fires)
+
+TCX -> TCX : lookup dst=192.168.10.2 in service map\nbpf-lb-external-clusterip: false\n-> LoadBalancer external IPs excluded\n-> NO DNAT applied
+TCX -> Node : still dst=192.168.10.2 (unchanged)
+
+Node -> Node : no local route for 192.168.10.2\n-> default route -> wlp0s20f3 (WiFi)
+Node -x Node : ARP "who has 192.168.10.2?"\nno useful reply on the wire
+note right of Node
+  *** PACKET DROPPED ***
+  Mobile sees ERR_CONNECTION_TIMED_OUT
+end note
+@enduml

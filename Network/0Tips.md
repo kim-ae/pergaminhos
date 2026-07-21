@@ -22,3 +22,20 @@ tailscale ping 100.64.0.5   # peer's Tailscale IP
 ```
 tailscale debug derp-map
 ```
+
+## Check the local ARP cache
+#arp #cli #diagnostics
+```
+arp -n
+# Address         HWtype  HWaddress           Flags
+# 192.168.0.1     ether   d8:0d:17:aa:bb:cc   C
+# 192.168.10.2    ether   (incomplete)         -   <- unresolved, traffic won't reach it
+```
+
+## Test whether an IP resolves via ARP on the local segment
+#arp #cli #diagnostics #metallb #cilium
+```
+arping 192.168.10.2
+# success from LAN confirms Cilium L2 Announcements / MetalLB is
+# answering ARP for that VIP correctly on this segment
+```

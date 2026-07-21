@@ -1,0 +1,26 @@
+@startuml arp-request-reply
+participant "Host A\n192.168.0.101 (aa:aa:aa)" as A
+participant "Everyone on segment" as All
+participant "Host B\n192.168.0.102 (bb:bb:bb)" as B
+
+== ARP Request (broadcast) ==
+A -> All : dst MAC=ff:ff:ff:ff:ff:ff\nop=REQUEST\n"who has 192.168.0.102? tell 192.168.0.101"
+note right of All
+  Every device on the L2 segment
+  receives the broadcast frame.
+end note
+
+== ARP Reply (unicast) ==
+B -> A : dst MAC=aa:aa:aa\nop=REPLY\nsender=192.168.0.102 (bb:bb:bb)
+A -> A : cache 192.168.0.102 -> bb:bb:bb
+
+== Gratuitous ARP (unsolicited) ==
+B -> All : op=REQUEST, sender IP = target IP\n"192.168.10.0 is now at ac:5a:fc:b7"
+note right of All
+  No question was asked - this is a
+  self-announcement. Used on host
+  boot, IP migration, or failover
+  (e.g. MetalLB L2 VIP takeover).
+  All neighbors update their cache.
+end note
+@enduml
