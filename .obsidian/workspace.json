@@ -55,26 +55,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Studies/My Home Lab/Planning.md",
+                "file": "Linux/0Tips.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Planning"
+              "title": "0Tips"
             }
           },
           {
-            "id": "d34d10de346a4602",
+            "id": "d4366a1779ecd941",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "Ideas.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "icon": "lucide-file",
+              "title": "Ideas"
             }
           }
         ],
@@ -98,7 +98,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -135,7 +137,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 367.5
   },
   "right": {
     "id": "5795367d6e176bea",
@@ -237,60 +239,62 @@
       "bases:Create new base": false
     }
   },
-  "active": "d34d10de346a4602",
+  "active": "d4366a1779ecd941",
   "lastOpenFiles": [
-    "Ideas.md",
-    "K8S/AIOps/Prompt.md",
-    "Studies/My Home Lab/Readme.md",
-    "Studies/Ops/ArgoCD.md",
     "CV MindMap.canvas",
-    "README.md",
-    "Untitled.md",
     "Skills.md",
-    "Studies/AI/Readme.md",
+    "kim7s knowledge model/zSource.md",
+    "kim7s knowledge model/Section.md",
+    "kim7s knowledge model/Get started.md",
+    "Ideas.md",
+    "Network/0Tips.md",
+    "Network/3Get Help/Tailscale Mobile Cannot Reach LoadBalancer VIP.md",
+    "Network/2Get Knowledge/NAT - DNAT and SNAT.md",
+    "Network/2Get Knowledge/arp-request-reply.png",
+    "Network/2Get Knowledge/arp-ethernet-vs-wifi.png",
+    "kim7s knowledge model/Get Help.md",
+    "Studies/My Home Lab/Planning.md",
+    "home-server planning/Want To Test.md",
+    "home-server planning/Want To Test.md.tmp.1611760.09392ae1983e",
+    "home-server planning/Installed.md",
+    "home-server planning/Installed.md.tmp.1611760.fb93d90db649",
+    "home-server planning",
+    "README.md",
     "Studies/My Home Lab/kim7s architecture.canvas",
     "Studies/My Home Lab/Questions.md",
-    "Studies/AI",
-    "Studies/My Home Lab/Planning.md",
-    "Linux/1Get Knowledge/How to cover delete data.md",
-    "Princípios Mecânicos em Prótese Fixa e Coroas.md",
-    "Untitled 1.md",
-    "Linux/0Tips.md",
-    "Linux/0Get Started/Which \"linux\"?.md",
-    "Untitled",
-    "Linux/0Get Started/Which Terminal Emulator?.md",
-    "K8S/AIOps",
-    "Linux/1Get Knowledge",
-    "Linux/Untitled.md",
-    "Azure/2Get Help/Terraform.md",
-    "Azure/2Get Help",
-    "Azure",
-    "Studies/Ops",
-    "Studies/Development",
-    "Studies",
-    "feedback.md",
-    "Grafana/1Get Started/K6.md",
-    "K8S/1Get Started/Untitled.md",
-    "K8S/3Get Help/Scheduler do not respect Rolling Update.md",
-    "K8S/2Get Knowledge/How does CPU works.md",
-    "K8S/0Tips.md",
-    "K8S/2Get Knowledge",
+    "Studies/My Home Lab/Readme.md",
+    "Untitled.md",
     "Projects/k8s-scaffolding/Idea.canvas",
-    "ansi-color-.md",
-    "Linux/0Get Started/ansi-color-code.png",
-    "Linux/0Get Started/kim7s-ohmyposh-theme.png",
-    "kim7s knowledge model/Kim7s knowledge model.png",
-    "Eng SW/2Get Knowledge/CICD Mindmap.png",
+    "Network/0Tips.md.tmp.1611760.a0a6ec4384b9",
+    "Network/3Get Help/Tailscale Mobile Cannot Reach LoadBalancer VIP.md.tmp.1611760.1e67fc7f4b58",
+    "Network/2Get Knowledge/ARP - Address Resolution Protocol.md",
+    "Network/2Get Knowledge/ARP - Address Resolution Protocol.md.tmp.1611760.71bc7955c6b1",
+    "Network/3Get Help/tailscale-vip-drop-before-fix.png",
+    "Network/2Get Knowledge/arp-scenario1-lan-to-vip.png",
+    "Network/3Get Help/tailscale-vip-drop-before-fix.puml",
+    "Network/3Get Help/tailscale-vip-drop-before-fix.puml.tmp.1611760.f9f5836d2149",
+    "Network/2Get Knowledge/arp-scenario1-lan-to-vip.puml",
+    "Network/2Get Knowledge/arp-scenario1-lan-to-vip.puml.tmp.1611760.a8ebd7d4194b",
+    "Network/2Get Knowledge/nat-layers-combined.png",
+    "Network/2Get Knowledge/snat-flow.png",
+    "Network/2Get Knowledge/dnat-flow.png",
+    "Network/zSource.md",
+    "Network/2Get Knowledge/Optimizing Tailscale Direct Connections.md",
+    "Network/2Get Knowledge/Tailscale Internals.md",
+    "Network/2Get Knowledge/tailscale-packet-journey.png",
+    "Network/2Get Knowledge/tailscale-nat-hole-punching.png",
+    "Network/2Get Knowledge/tailscale-architecture-overview.png",
+    "kim7s knowledge model/Kim7s knowledge model.canvas",
+    "kim7s knowledge model/CHANGELOG.md",
+    "CLAUDE.md",
+    "K8S/AIOps/Prompt.md",
+    "Studies/Ops/ArgoCD.md",
+    "Studies/AI/Readme.md",
     "Eng SW/2Get Knowledge/CICD Mindmap.canvas",
     "Eng SW/1Get Started/CD Flows.canvas",
     "Eng SW/1Get Started/CI Flows.canvas",
-    "Eng SW/1Get Started/CI Flows.png",
     "Eng SW/1Get Started/Simple Pipeline.canvas",
-    "Eng SW/1Get Started/CD Flows.png",
-    "kim7s knowledge model/Kim7s knowledge model.canvas",
-    "Eng SW/1Get Started/Simple Pipeline.png",
     "ELK/Filebeat/3Get Help/ES Performance links mindmap.canvas",
-    "ELK/ECK/2Get Knowledge/ES Architecture.canvas",
-    "ELK/ECK/3Get Help/images/node_indexing_rate.png"
+    "ELK/ECK/2Get Knowledge/ES Architecture.canvas"
   ]
 }
